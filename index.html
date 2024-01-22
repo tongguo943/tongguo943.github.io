@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tong Guo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <header class="top-bar">
+      <nav id="desktop-nav">
+        <a class="logo" href="#">Tong Guo</a>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav id="hamburger-nav">
+        <a class="logo" href="#">Tong Guo</a>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/avatar.png" alt="Profile picture" />
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hi there, I'm</p>
+
+        <div class="waviy">
+          <h1 style="--i: 1">T</h1>
+          <h1 style="--i: 2">o</h1>
+          <h1 style="--i: 3">n</h1>
+          <h1 style="--i: 4">g</h1>
+          <h1>&nbsp;</h1>
+          <h1 style="--i: 5">G</h1>
+          <h1 style="--i: 6">u</h1>
+          <h1 style="--i: 7">o</h1>
+        </div>
+
+        <p class="section__text__p2">
+          Stanford University<br />School of Engineering
+        </p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <div class="section-title-container">
+        <div class="semi-circle"></div>
+
+        <div class="waviy">
+          <h1 style="--i: 1">A</h1>
+          <h1 style="--i: 2">B</h1>
+          <h1 style="--i: 3">O</h1>
+          <h1 style="--i: 4">U</h1>
+          <h1 style="--i: 5">T</h1>
+          <h1>&nbsp;</h1>
+          <h1 style="--i: 6">M</h1>
+          <h1 style="--i: 7">E</h1>
+        </div>
+
+        <div class="semi-circle"></div>
+      </div>
+
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/avatar_2.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/Stanford_University_Logo.png"
+                alt="Stanford logo"
+                class="icon-logo"
+              />
+              <h3>Stanford University</h3>
+              <p>Master of Science<br />2022 - 2024</p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="./assets/Zhejiang_University_Logo.png"
+                alt="ZJU logo"
+                class="icon-logo"
+              />
+              <h3>Zhejiang University</h3>
+              <p>Bachelor of Engineering<br />2018 - 2022</p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              As a motivated graduate student, my educational journey has
+              allowed me to explore a broad range of programming areas,
+              significantly enhancing both my technical skills and practical
+              knowledge.
+            </p>
+            <p>
+              I am passionate about applying my diverse skillset to innovate and
+              solve complex problems in software development, standing out with
+              my ability to adapt and deliver in dynamic environments quickly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <div class="section-title-container">
+        <div class="semi-circle"></div>
+        <div class="waviy">
+          <h1 style="--i: 1">S</h1>
+          <h1 style="--i: 2">K</h1>
+          <h1 style="--i: 3">I</h1>
+          <h1 style="--i: 4">L</h1>
+          <h1 style="--i: 5">L</h1>
+          <h1 style="--i: 6">S</h1>
+        </div>
+        <div class="semi-circle"></div>
+      </div>
+
+      <div class="experience-details-container">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming Languages</h2>
+
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/JavaScript_logo.png"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>JavaScript</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/TypeScript_logo.png"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>TypeScript</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/Java_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>Java</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/C_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>C</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/Python_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>Python</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/SQL_logo.png"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>SQL</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Web Development</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/HTML5_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>HTML</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/CSS3_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>CSS</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/React_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>React</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/redux_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>Redux</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/Nextjs_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>Next.js</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/Nodejs_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>Node.js</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/express_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>Express.js</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/Webpack_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>Webpack</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/MongoDB_logo.svg"
+                alt="Skille icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>MongoDB</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/MySQL_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>MySQL</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/firebase_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>Firebase</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Tools & Platform</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/visual_studio_code_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>Visual Studio Code</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/intellij_idea_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>IntelliJ IDEA</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/eclipse_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>Eclipse</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/aws_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>AWS</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/google_cloud_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>Google Cloud</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/Git_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>Git</p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="./assets/matlab_logo.svg"
+                alt="Skill icon"
+                class="icon-skill"
+              />
+              <div>
+                <p>MATLAB</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <div class="section-title-container">
+        <div class="semi-circle"></div>
+        <div class="waviy">
+          <h1 style="--i: 1">P</h1>
+          <h1 style="--i: 2">R</h1>
+          <h1 style="--i: 3">O</h1>
+          <h1 style="--i: 4">J</h1>
+          <h1 style="--i: 5">E</h1>
+          <h1 style="--i: 6">C</h1>
+          <h1 style="--i: 7">T</h1>
+          <h1 style="--i: 8">S</h1>
+        </div>
+        <div class="semi-circle"></div>
+      </div>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pixshare.JPG"
+                alt="Photo-Sharing App"
+                class="project-img"
+              />
+            </div>
+
+            <div class="tag-container">
+              <p class="project-tag">MongoDb</p>
+              <p class="project-tag">Express.js</p>
+              <p class="project-tag">React</p>
+              <p class="project-tag">Node.js</p>
+            </div>
+
+            <div class="project-detail">
+              <div>
+                <h2 class="project-title">Photo-Sharing App</h2>
+
+                <p class="project-subtitle">Full-Stack Development</p>
+              </div>
+              <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/tongguo943/pixshare.git'"
+              />
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/tunify.PNG"
+                alt="Music Streaming App"
+                class="project-img"
+              />
+            </div>
+
+            <div class="tag-container">
+              <p class="project-tag">React</p>
+              <p class="project-tag">Tailwind CSS</p>
+              <p class="project-tag">RapidAPI</p>
+            </div>
+
+            <div class="project-detail">
+              <div>
+                <h2 class="project-title">Music Streaming Service</h2>
+
+                <p class="project-subtitle">
+                  Front-End Development &#x2022; API Integration
+                </p>
+              </div>
+              <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/tongguo943/tunify.git'"
+              />
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/chit-chat.PNG"
+                alt="Instant Messenger"
+                class="project-img"
+              />
+            </div>
+
+            <div class="tag-container">
+              <p class="project-tag">React Native</p>
+              <p class="project-tag">Redux</p>
+              <p class="project-tag">Firebase</p>
+            </div>
+
+            <div class="project-detail">
+              <div>
+                <h2 class="project-title">Instant Messaging App</h2>
+
+                <p class="project-subtitle">Mobile Application Development</p>
+              </div>
+              <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/tongguo943/chit-chat.git'"
+              />
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/bunnyworld.JPG"
+                alt="Android Game Development"
+                class="project-img"
+              />
+            </div>
+
+            <div class="tag-container">
+              <p class="project-tag">Java</p>
+              <p class="project-tag">XML</p>
+              <p class="project-tag">SQLite</p>
+            </div>
+
+            <div class="project-detail">
+              <div>
+                <h2 class="project-title">Android Game Development</h2>
+
+                <p class="project-subtitle">
+                  Object-Oriented Design &#x2022; Graphical User Interface
+                  Design
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/stackoverflow.PNG"
+                alt="StackOverflow: Machine Learning & Analysis"
+                class="project-img"
+              />
+            </div>
+
+            <div class="tag-container">
+              <p class="project-tag">SQL</p>
+              <p class="project-tag">Matplotlib</p>
+              <p class="project-tag">Google BigQuery</p>
+              <p class="project-tag">Google Colab</p>
+            </div>
+
+            <div class="project-detail">
+              <div>
+                <h2 class="project-title">
+                  Question Response Time on Stack Overflow
+                </h2>
+
+                <p class="project-subtitle">
+                  Big Data Analysis &#x2022; Machine Learning
+                </p>
+              </div>
+              <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/tongguo943/stackoverflow-analysis.git'"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Talk to Me</p>
+      <div class="section-title-container">
+        <div class="semi-circle"></div>
+        <div class="waviy">
+          <h1 style="--i: 1">C</h1>
+          <h1 style="--i: 2">O</h1>
+          <h1 style="--i: 3">N</h1>
+          <h1 style="--i: 4">T</h1>
+          <h1 style="--i: 5">E</h1>
+          <h1 style="--i: 6">C</h1>
+          <h1 style="--i: 7">T</h1>
+        </div>
+        <div class="semi-circle"></div>
+      </div>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:tongguo2024@gmail.com">tongguo2024@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <p>Copyright &#169; 2024 Tong Guo. All Rights Reserved.</p>
+      </div>
+      <div class="back-to-top-btn-container">
+        <p>BACK TO TOP</p>
+        <img
+          src="./assets/arrow-up.png"
+          alt="Arrow icon"
+          class="back-to-top-btn icon"
+          onclick="location.href='./#'"
+        />
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
