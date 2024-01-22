@@ -89,22 +89,11 @@
     border: rgb(53, 53, 53) 0.1rem solid;
     cursor: default;
   }
-  .btn-color-1:active {
-    background: rgb(0, 0, 0);
-    border: rgb(255, 255, 255) 0.1rem solid;
-    cursor: pointer;
-  }
   .btn-color-2:hover {
     background: none;
     color: rgb(53, 53, 53);
     border: rgb(53, 53, 53) 0.1rem solid;
     cursor: default;
-  }
-  .btn-color-2:active {
-    background: rgb(53, 53, 53);
-    color: white;
-    border: rgb(255, 255, 255) 0.1rem solid;
-    cursor: pointer;
   }
   .details-container:hover {
     border: rgb(163, 163, 163) 0.1rem solid;
